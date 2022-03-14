@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body onload="draw();">
+    <h1>Snake</h1>
+    <canvas id="lifeBoard" width="500" height="50"> </canvas>
+    <div style="display: flex; flex-direction: row">
+      <canvas
+        id="snakeBoard"
+        width="600"
+        height="600"
+        style="border: 1px solid #000000; border-radius: 8px"
+      ></canvas>
+      <div style="display: flex; flex-direction: column">
+        <canvas
+          id="score1Board"
+          width="100"
+          height="100"
+          style="
+            border: 1px solid #000000;
+            margin-left: 16px;
+            border-radius: 8px;
+          "
+        ></canvas>
+        <canvas
+          id="level1Board"
+          width="200"
+          height="200"
+          style="
+            border: 1px solid #000000;
+            margin-left: 16px;
+            margin-top: 16px;
+            border-radius: 8px;
+          "
+        ></canvas>
+      </div>
+    </div>
+  </body>
+</html>
