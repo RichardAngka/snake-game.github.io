@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-20.04
     defaults:
       run:
-        working-directory: ./snake-public
+        working-directory: ./snake-public.github.io
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
