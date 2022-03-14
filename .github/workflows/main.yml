@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-20.04
     defaults:
       run:
-        working-directory: ./snake-public.github.io
+        working-directory: ./snake-game
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
@@ -19,4 +19,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: snake-public.github.io
+          publish_dir: snake-game
